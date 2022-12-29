@@ -1,0 +1,1186 @@
+[
+    {
+        "id": "7eb53033e5b2e7b9",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a8dca200c7dad186",
+        "type": "ui_numeric",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Quantidade de Pessoas: ",
+        "tooltip": "",
+        "group": "83dca950241692eb",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "260",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 80,
+        "wires": [
+            [
+                "0c2fc24dfd753f24"
+            ]
+        ]
+    },
+    {
+        "id": "a58668a27bfdcaf4",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Direção",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Inovação",
+                "value": 95.78,
+                "type": "num"
+            },
+            {
+                "label": "Marketing",
+                "value": 62.02,
+                "type": "num"
+            },
+            {
+                "label": "Recrutamento",
+                "value": 34.43,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "018d3f21f7bf1e5c"
+            ]
+        ]
+    },
+    {
+        "id": "f36b45c6e702bd18",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Categoria",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Diamond",
+                "value": "48",
+                "type": "str"
+            },
+            {
+                "label": "Emerald",
+                "value": 36,
+                "type": "num"
+            },
+            {
+                "label": "Ruby",
+                "value": 24,
+                "type": "num"
+            },
+            {
+                "label": "Sapphire",
+                "value": 16,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "e49602b3b494d9c6"
+            ]
+        ]
+    },
+    {
+        "id": "71421743c32073b0",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Modelo",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Online",
+                "value": 0.4,
+                "type": "num"
+            },
+            {
+                "label": "Presencial",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "f74900d442a056ce"
+            ]
+        ]
+    },
+    {
+        "id": "2e2108cd74a69ae9",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Tipo",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Interno",
+                "value": 0.3,
+                "type": "num"
+            },
+            {
+                "label": "Externo",
+                "value": 0,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "78f9348d88f12263"
+            ]
+        ]
+    },
+    {
+        "id": "0c2fc24dfd753f24",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "qt_pessoas",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 60,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "e49602b3b494d9c6",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "categoria",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "018d3f21f7bf1e5c",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "direcao",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "f74900d442a056ce",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "modelo",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "78f9348d88f12263",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tipo",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "d882e9454ba3d33c",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.qt_pessoas",
+                "pt": "msg",
+                "to": "qt_pessoas",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.categoria",
+                "pt": "msg",
+                "to": "categoria",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.direcao",
+                "pt": "msg",
+                "to": "direcao",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.modelo",
+                "pt": "msg",
+                "to": "modelo",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.tipo",
+                "pt": "msg",
+                "to": "tipo",
+                "tot": "flow",
+                "dc": true
+            },
+            {
+                "t": "set",
+                "p": "payload.desconto",
+                "pt": "msg",
+                "to": "desconto",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.evento",
+                "pt": "msg",
+                "to": "evento",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.qt_desafios",
+                "pt": "msg",
+                "to": "qt_desafios",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.local",
+                "pt": "msg",
+                "to": "local",
+                "tot": "flow"
+            },
+            {
+                "t": "set",
+                "p": "payload.ad_noturno",
+                "pt": "msg",
+                "to": "ad_noturno",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "def3db4ea9724cf7"
+            ]
+        ]
+    },
+    {
+        "id": "d8a356ae8938c874",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "function 1",
+        "func": "msg.payload.resultado = ((msg.payload.direcao * msg.payload.categoria) * msg.payload.qt_pessoas)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.modelo)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.tipo)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.local)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.evento)\nmsg.payload.resultado = msg.payload.resultado + (msg.payload.resultado * msg.payload.qt_desafios)\nmsg.payload.resultado = msg.payload.resultado + (msg.payload.resultado * msg.payload.ad_noturno)\nmsg.payload.bruto = msg.payload.resultado\nmsg.payload.desconto = msg.payload.desconto / 100\nmsg.payload.desconto = msg.payload.resultado * msg.payload.desconto\nmsg.payload.resultado = msg.payload.resultado - msg.payload.desconto\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 400,
+        "wires": [
+            [
+                "716d46ab1a5c4e33",
+                "24a1131b50865889",
+                "ddc87e86b44eeab9",
+                "ec49578c57d509ee"
+            ]
+        ]
+    },
+    {
+        "id": "d856f82ac7905ed2",
+        "type": "debug",
+        "z": "7eb53033e5b2e7b9",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1480,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "716d46ab1a5c4e33",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.resultado",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1300,
+        "y": 380,
+        "wires": [
+            [
+                "d856f82ac7905ed2",
+                "38896f6665fb4828"
+            ]
+        ]
+    },
+    {
+        "id": "8526d94a1dbd6631",
+        "type": "ui_text",
+        "z": "7eb53033e5b2e7b9",
+        "group": "67d9a50fbe449de7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor R$ ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1840,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "38896f6665fb4828",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "func": "msg.payload = msg.payload.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 380,
+        "wires": [
+            [
+                "8526d94a1dbd6631"
+            ]
+        ]
+    },
+    {
+        "id": "4a08d628feb7b019",
+        "type": "ui_numeric",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Desconto:",
+        "tooltip": "",
+        "group": "83dca950241692eb",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "24d347d73abd9eff"
+            ]
+        ]
+    },
+    {
+        "id": "24d347d73abd9eff",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "desconto",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "9d1b049e2feb2ab5",
+        "type": "ui_text",
+        "z": "7eb53033e5b2e7b9",
+        "group": "67d9a50fbe449de7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Desconto Valor R$ ",
+        "format": "{{msg.payload.desconto}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1870,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "24a1131b50865889",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "func": "msg.payload.desconto = msg.payload.desconto.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 460,
+        "wires": [
+            [
+                "9d1b049e2feb2ab5"
+            ]
+        ]
+    },
+    {
+        "id": "a8260f13046cb7cc",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Evento",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Hackathon",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Ideathon",
+                "value": 0.25,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "a1ba4833a96d4d00"
+            ]
+        ]
+    },
+    {
+        "id": "a1ba4833a96d4d00",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "evento",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "05baa6f3e367d6ae",
+        "type": "ui_numeric",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Quantidade de Desafios: ",
+        "tooltip": "",
+        "group": "83dca950241692eb",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "wrap": true,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "260",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "76c048bd961e07e2"
+            ]
+        ]
+    },
+    {
+        "id": "9f110c9827585775",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "1",
+                "fromt": "num",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "2",
+                "fromt": "num",
+                "to": "0.15",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "3",
+                "fromt": "num",
+                "to": "0.20",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "4",
+                "fromt": "num",
+                "to": "0.25",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "5",
+                "fromt": "num",
+                "to": "0.30",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "6",
+                "fromt": "num",
+                "to": "0.35",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "7",
+                "fromt": "num",
+                "to": "0.40",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "8",
+                "fromt": "num",
+                "to": "0.45",
+                "tot": "num"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "9",
+                "fromt": "num",
+                "to": "0.50",
+                "tot": "num"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "qt_desafios",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "76c048bd961e07e2",
+        "type": "switch",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "10",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "10",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 330,
+        "y": 220,
+        "wires": [
+            [
+                "9f110c9827585775"
+            ],
+            [
+                "710e8bed0571f0c2"
+            ]
+        ]
+    },
+    {
+        "id": "710e8bed0571f0c2",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0.5",
+                "tot": "num"
+            },
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "qt_desafios",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "f436d5a105e5b18a",
+        "type": "ui_dropdown",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "label": "Local ",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "83dca950241692eb",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "FIAP",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Cliente",
+                "value": 0.2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 170,
+        "y": 460,
+        "wires": [
+            [
+                "0236eceb2f318494"
+            ]
+        ]
+    },
+    {
+        "id": "0236eceb2f318494",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "local",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "499b14920236eeba",
+        "type": "switch",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "property": "payload.desconto",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 320,
+        "wires": [
+            [
+                "def3db4ea9724cf7"
+            ],
+            [
+                "d8a356ae8938c874"
+            ]
+        ]
+    },
+    {
+        "id": "def3db4ea9724cf7",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "function 2",
+        "func": "msg.payload.resultado = ((msg.payload.direcao * msg.payload.categoria) * msg.payload.qt_pessoas)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.modelo)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.tipo)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.local)\nmsg.payload.resultado = msg.payload.resultado - (msg.payload.resultado * msg.payload.evento)\nmsg.payload.resultado = msg.payload.resultado + (msg.payload.resultado * msg.payload.qt_desafios)\nmsg.payload.bruto = msg.payload.resultado\nmsg.payload.desconto = msg.payload.desconto / 100\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 100,
+        "wires": [
+            [
+                "46c5a074141afd66",
+                "d687d35ef62db4b8",
+                "ec49578c57d509ee"
+            ]
+        ]
+    },
+    {
+        "id": "ddc87e86b44eeab9",
+        "type": "debug",
+        "z": "7eb53033e5b2e7b9",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "46c5a074141afd66",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.resultado",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1280,
+        "y": 100,
+        "wires": [
+            [
+                "080062cc8db4c8c2"
+            ]
+        ]
+    },
+    {
+        "id": "080062cc8db4c8c2",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "func": "msg.payload = msg.payload.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 100,
+        "wires": [
+            [
+                "8526d94a1dbd6631"
+            ]
+        ]
+    },
+    {
+        "id": "d687d35ef62db4b8",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "func": "msg.payload.desconto = msg.payload.desconto.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 240,
+        "wires": [
+            [
+                "9d1b049e2feb2ab5"
+            ]
+        ]
+    },
+    {
+        "id": "cff217f2265a16a8",
+        "type": "ui_text",
+        "z": "7eb53033e5b2e7b9",
+        "group": "67d9a50fbe449de7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor bruto R$ ",
+        "format": "{{msg.payload.bruto}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1840,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ec49578c57d509ee",
+        "type": "function",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "func": "msg.payload.bruto = msg.payload.bruto.toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 160,
+        "wires": [
+            [
+                "cff217f2265a16a8"
+            ]
+        ]
+    },
+    {
+        "id": "bdacd9d74cb62f39",
+        "type": "change",
+        "z": "7eb53033e5b2e7b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ad_noturno",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "d882e9454ba3d33c"
+            ]
+        ]
+    },
+    {
+        "id": "83dca950241692eb",
+        "type": "ui_group",
+        "name": "Informações",
+        "tab": "a5f6de3b2a0dc4f3",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "67d9a50fbe449de7",
+        "type": "ui_group",
+        "name": "Valor",
+        "tab": "a5f6de3b2a0dc4f3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5f6de3b2a0dc4f3",
+        "type": "ui_tab",
+        "name": "Hackathon Calculator",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": true,
+        "hidden": true
+    }
+]
